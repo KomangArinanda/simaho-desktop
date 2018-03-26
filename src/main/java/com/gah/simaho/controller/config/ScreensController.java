@@ -97,6 +97,7 @@ public class ScreensController extends StackPane{
 
         mainContainer.loadScreen(ScreenList.screen1Id, ScreenList.screenFile1);
         mainContainer.loadScreen(ScreenList.mainScreenId, ScreenList.mainScreenFile);
+        mainContainer.loadScreen(ScreenList.branchAdminId, ScreenList.branchAdminFile);
 
         mainContainer.setScreen(ScreenList.mainScreenId);
         return mainContainer;

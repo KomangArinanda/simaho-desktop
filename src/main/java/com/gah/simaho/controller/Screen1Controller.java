@@ -22,38 +22,38 @@ public class Screen1Controller implements Initializable, ControlledScreen {
     @Autowired
     private ScreensController screensController;
 
-    @FXML private TableView<Pengguna> tblPengguna;
-    @FXML private TableColumn<Pengguna, String> kolNama;
-    @FXML private TableColumn<Pengguna, String> kolEmail;
+    @FXML private TableView<Branch> tblPengguna;
+    @FXML private TableColumn<Branch, String> kolNama;
+    @FXML private TableColumn<Branch, String> kolEmail;
 
 
-    ObservableList<Pengguna> data = FXCollections.observableArrayList(
-            new Pengguna("Komang","arinanda.mail@gmail.com"),
-            new Pengguna("Egik","egik.mail@gmail.com"),
-            new Pengguna("marpaung","marpaung.mail@gmail.com"),
-            new Pengguna("manulang","manulang.mail@gmail.com"),
-            new Pengguna("siregar","siregar.mail@gmail.com"),
-            new Pengguna("hutabarat","hutabarat.mail@gmail.com"),
-            new Pengguna("Egik","egik.mail@gmail.com"),
-            new Pengguna("marpaung","marpaung.mail@gmail.com"),
-            new Pengguna("manulang","manulang.mail@gmail.com"),
-            new Pengguna("siregar","siregar.mail@gmail.com"),
-            new Pengguna("hutabarat","hutabarat.mail@gmail.com"),
-            new Pengguna("Egik","egik.mail@gmail.com"),
-            new Pengguna("marpaung","marpaung.mail@gmail.com"),
-            new Pengguna("manulang","manulang.mail@gmail.com"),
-            new Pengguna("siregar","siregar.mail@gmail.com"),
-            new Pengguna("hutabarat","hutabarat.mail@gmail.com"),
-            new Pengguna("Egik","egik.mail@gmail.com"),
-            new Pengguna("marpaung","marpaung.mail@gmail.com"),
-            new Pengguna("manulang","manulang.mail@gmail.com"),
-            new Pengguna("siregar","siregar.mail@gmail.com"),
-            new Pengguna("hutabarat","hutabarat.mail@gmail.com"),
-            new Pengguna("Egik","egik.mail@gmail.com"),
-            new Pengguna("marpaung","marpaung.mail@gmail.com"),
-            new Pengguna("manulang","manulang.mail@gmail.com"),
-            new Pengguna("siregar","siregar.mail@gmail.com"),
-            new Pengguna("hutabarat","hutabarat.mail@gmail.com")
+    ObservableList<Branch> data = FXCollections.observableArrayList(
+//            new Branch("Komang","arinanda.mail@gmail.com"),
+//            new Branch("Egik","egik.mail@gmail.com"),
+//            new Branch("marpaung","marpaung.mail@gmail.com"),
+//            new Branch("manulang","manulang.mail@gmail.com"),
+//            new Branch("siregar","siregar.mail@gmail.com"),
+//            new Branch("hutabarat","hutabarat.mail@gmail.com"),
+//            new Branch("Egik","egik.mail@gmail.com"),
+//            new Branch("marpaung","marpaung.mail@gmail.com"),
+//            new Branch("manulang","manulang.mail@gmail.com"),
+//            new Branch("siregar","siregar.mail@gmail.com"),
+//            new Branch("hutabarat","hutabarat.mail@gmail.com"),
+//            new Branch("Egik","egik.mail@gmail.com"),
+//            new Branch("marpaung","marpaung.mail@gmail.com"),
+//            new Branch("manulang","manulang.mail@gmail.com"),
+//            new Branch("siregar","siregar.mail@gmail.com"),
+//            new Branch("hutabarat","hutabarat.mail@gmail.com"),
+//            new Branch("Egik","egik.mail@gmail.com"),
+//            new Branch("marpaung","marpaung.mail@gmail.com"),
+//            new Branch("manulang","manulang.mail@gmail.com"),
+//            new Branch("siregar","siregar.mail@gmail.com"),
+//            new Branch("hutabarat","hutabarat.mail@gmail.com"),
+//            new Branch("Egik","egik.mail@gmail.com"),
+//            new Branch("marpaung","marpaung.mail@gmail.com"),
+//            new Branch("manulang","manulang.mail@gmail.com"),
+//            new Branch("siregar","siregar.mail@gmail.com"),
+//            new Branch("hutabarat","hutabarat.mail@gmail.com")
 
     );
 
@@ -70,8 +70,8 @@ public class Screen1Controller implements Initializable, ControlledScreen {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
-        kolNama.setCellValueFactory(new PropertyValueFactory<Pengguna, String>("Nama"));
-        kolEmail.setCellValueFactory(new PropertyValueFactory<Pengguna, String>("Email"));
+        kolNama.setCellValueFactory(new PropertyValueFactory<Branch, String>("Nama"));
+        kolEmail.setCellValueFactory(new PropertyValueFactory<Branch, String>("Email"));
         tblPengguna.setItems(data);
     }
 }

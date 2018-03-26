@@ -25,7 +25,7 @@ public class LoginController  implements Initializable, ControlledScreen {
 
 
     public void login(ActionEvent actionEvent) {
-        screensController.setScreen(ScreenList.screen1Id);
+        screensController.setScreen(ScreenList.branchAdminId);
     }
 
     @Override
